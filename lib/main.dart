@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'paginaUsuario.dart'; // Ou qualquer arquivo que contenha a interface principal
+import 'paginaUsuario.dart'; 
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Teste de API',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: UsuariosPage(), // Chama a tela que usa fetchUsuarios()
+      home: PaginaUsuario(), 
+      debugShowCheckedModeBanner: false,
     );
   }
 }
